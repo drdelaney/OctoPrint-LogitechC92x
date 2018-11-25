@@ -1,0 +1,24 @@
+<h3>{{ _('Logitech Camera Control') }}</h3>
+
+<form class="form-horizontal">
+	<p>{{ _('
+		This is here to help configure digital settings for Logitech camerass that support it.
+	') }}</p>
+
+	<div class="control-group">
+		<label class="control-label">{{ _('Path to v4l2-ctl') }}</label>
+		<div class="controls">
+			<input type="text" class="input-block-level" data-bind="value: settings.plugins.LogitechCameraControl.v4l2ctlPath">
+			<span class="help-inline">This defines the path to v4l2-ctl. For OctoPi/Raspberry Pi, the default value should work.</span>
+		</div>
+
+		<label class="control-label">{{ _('Auto Focus') }}</label>
+		<div class="controls">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.plugins.LogitechCameraControl.focus_auto">
+				<span class="help-inline">Enable or disable Auto Focus for the camera.</span>
+			</label>
+		</div>
+	</div>
+
+</form>
